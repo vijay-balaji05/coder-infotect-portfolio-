@@ -1,75 +1,212 @@
-# React + TypeScript + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with **React, TypeScript, Vite, and Material UI (MUI)**. The application showcases my professional profile, technical skills, education, experience, and projects in a clean and responsive interface.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Portfolio:** www.demo.in
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 About the Project
 
-## Expanding the ESLint configuration
+This portfolio is a fully frontend-based web application developed using React and TypeScript.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The application is designed to present my professional profile and development experience, including:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* Personal introduction
+* Technical skills
+* Soft skills
+* Education
+* Professional experience
+* Projects
+* Project technologies
+* Contact information
+* Responsive design for desktop, tablet, and mobile devices
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+The application does **not require a backend server or database**. All portfolio content is managed within the React application.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
-```
+## ✨ Features
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+* 📱 Fully responsive design
+* ⚛️ Component-based React architecture
+* 🔷 TypeScript for type safety
+* 🎨 Material UI components
+* 🧑‍💻 Professional profile section
+* 🛠️ Technical skills section
+* 💡 Soft skills section
+* 🎓 Education details
+* 💼 Experience section
+* 🚀 Project showcase
+* 🔗 Project links
+* 📧 Contact information
+* ⚡ Fast development and production builds using Vite
+* 📦 Reusable React components
+* 🧹 ESLint configuration for code quality
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Technologies Used
 
-```
+### Frontend
+
+* React
+* TypeScript
+* Vite
+* Material UI (MUI)
+* HTML5
+* CSS3
+* JavaScript
+
+### Development Tools
+
+* Node.js
+* npm
+* Git
+* GitHub
+* ESLint
+
+---
+
+## 📂 Project Structure
+
+coder-infortech-portfolio/
+├── public/
+│   └── assets/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── ...
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+
+## ⚙️ Prerequisites
+
+Before running the project, make sure you have the following installed:
+
+* Node.js
+* npm
+* Git
+
+You can verify the installations using:
+
+node --version
+npm --version
+git --version
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+git clone https://github.com/vijay-balaji05/coder-infotect-portfolio-.git
+
+
+### 2. Navigate to the Project
+
+cd <project-folder>
+
+
+### 3. Install Dependencies
+
+npm install
+
+### 4. Start the Development Server
+
+npm run dev
+
+The application will be available at the local development URL shown by Vite.
+
+
+## 🔍 Code Quality
+
+ESLint is configured to maintain code quality and identify potential issues during development.
+
+Run:
+
+npm run lint
+
+
+
+## 🔐 Backend & Database
+
+This project currently has:
+
+* ❌ No backend
+* ❌ No REST API
+* ❌ No database
+* ❌ No authentication service
+
+It is completely implemented as a **frontend React application**.
+
+All portfolio information displayed by the application is maintained within the frontend source code.
+
+## 📸 Portfolio Sections
+
+The website contains sections covering:
+
+### About Me
+
+A brief introduction and professional overview.
+
+### Skills
+
+A categorized presentation of technical and soft skills.
+
+### Education
+
+Academic background and educational qualifications.
+
+### Experience
+
+Professional experience and relevant responsibilities.
+
+### Projects
+
+A collection of completed projects with descriptions, technologies, duration, and project links.
+
+### Contact
+
+Professional contact information and relevant social/profile links.
+
+---
+
+## 📈 Future Improvements
+
+Potential improvements for future versions include:
+
+* Adding a backend for contact form submissions
+* Adding a database for dynamic portfolio content
+* Adding an admin dashboard
+* Adding a blog section
+* Adding project filtering
+* Adding animations and enhanced interactions
+* Adding analytics
+* Adding a downloadable resume feature
+
+## 👨‍💻 Author
+
+**Vijay Balaji B**
+
+Frontend / Full-Stack Developer
+
+### Technologies
+
+`Java` · `Spring Boot` · `React` · `TypeScript` · `JavaScript` · `SQL` · `MySQL`
+
+---
+
+## 📄 License
+
+This project is created for personal portfolio and professional showcase purposes.
