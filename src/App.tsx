@@ -1,13 +1,22 @@
-import { Box, Typography } from '@mui/material'
-import React from 'react'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Header } from "./components/header"
+import { HomeScreen } from "./pages/home-screen"
+import ProjectsScreen from "./pages/projects"
+import { Footer } from "./components/footer"
+
 
 function App() {
   return (
-    <Box>
-      <Typography sx={{ fontSize: '2rem', fontWeight: 'bold', textAlign: 'center' }}>
-        Hello, World!
-      </Typography>
-    </Box>
+   
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/projects" element={<ProjectsScreen />} />
+        </Routes>
+        <Header />
+        <Footer />
+      </BrowserRouter>
+
   )
 }
 
