@@ -68,30 +68,6 @@ The application does **not require a backend server or database**. All portfolio
 * GitHub
 * ESLint
 
----
-
-## 📂 Project Structure
-
-coder-infortech-portfolio/
-├── public/
-│   └── assets/
-│
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── ...
-│
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
-└── README.md
-
 ## ⚙️ Prerequisites
 
 Before running the project, make sure you have the following installed:
