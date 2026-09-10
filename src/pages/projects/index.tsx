@@ -142,10 +142,6 @@ const GalleryDialog: React.FC<GalleryDialogProps> = ({ open, onClose, images, ti
   const fullScreen = useMediaQuery(theme.breakpoints.down('sm'));
   const [index, setIndex] = useState(initialIndex);
 
-  React.useEffect(() => {
-    if (open) setIndex(initialIndex);
-  }, [open, initialIndex]);
-
   const hasMultiple = images.length > 1;
 
   const goPrev = () => setIndex((i) => (i - 1 + images.length) % images.length);
@@ -627,36 +623,7 @@ const ProjectSpotlight: React.FC<ProjectSpotlightProps> = ({ project, reversed, 
               View screenshots
             </Button>
 
-            <Button
-              component="a"
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="outlined"
-              endIcon={<ExternalLink size={16} />}
-              sx={{
-                borderRadius: `${t.radiusMd}px`,
-                px: 3,
-                py: 1.1,
-                width: { xs: '100%', sm: 'auto' },
-                textTransform: 'none',
-                fontWeight: 600,
-                fontSize: { xs: '0.875rem', sm: '0.95rem' },
-                color: t.textPrimary,
-                borderColor: t.accentBorder,
-                transition: 'background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease',
-                [reduceMotion]: { transition: 'none' },
-                [hoverCapable]: {
-                  '&:hover': {
-                    borderColor: t.accent,
-                    backgroundColor: t.accentSoft,
-                    color: t.accent,
-                  },
-                },
-              }}
-            >
-              View project
-            </Button>
+            
           </Stack>
         </Box>
       </Box>
